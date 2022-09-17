@@ -1,0 +1,28 @@
+#scores-result tr:nth-child(2n + 1) {
+  background-color: cyan;
+}
+
+#scores-result tr:nth-child(2n) {
+  background-color: pink;
+}
+
+#link_container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  margin: 20px;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  #link_container {
+    width: 20%;
+    display: flex;
+  }
+}

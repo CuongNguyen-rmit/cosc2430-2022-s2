@@ -1,17 +1,20 @@
 <?php
 
 // compare 2 items based on price
-function cmp_price($p1, $p2) {
-  return $p1['price'] - $p2['price'];
+function cmp_price($p1, $p2)
+{
+  return $p1['price'] - $p2['price'] < 1 ? 1 : -1;
 }
 
 // compare 2 items based on name
-function cmp_name($p1, $p2) {
+function cmp_name($p1, $p2)
+{
   return strcmp($p1['name'], $p2['name']);
 }
 
 // compare 2 items based on weight
-function cmp_weight($p1, $p2) {
+function cmp_weight($p1, $p2)
+{
   return (int)$p1['weight'] - (int)$p2['weight'];
 }
 

@@ -1,0 +1,48 @@
+#main {
+  display: flex;
+  width: 100%;
+}
+
+#info {
+  margin: 10px 10px;
+}
+img {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  #main {
+    display: inline;
+    width: 10%;
+  }
+}
+
+#education dl dt:nth-of-type(2n) {
+  background-color: #fcffcd;
+}
+#education dl dd:nth-of-type(2n) {
+  background-color: #fcffcd;
+}
+
+#education dl dt:nth-of-type(2n + 1) {
+  background-color: #e8ffff;
+}
+#education dl dd:nth-of-type(2n + 1) {
+  background-color: #e8ffff;
+}
+
+#experience dl dt:first-child {
+  background-color: #ffd20fba;
+}
+
+#experience dl dd:first-of-type {
+  background-color: #ffd20fba;
+}
+
+#experience dl dt {
+  background-color: #6fa2ff;
+}
+
+#experience dl dd {
+  background-color: #6fa2ff;
+}
